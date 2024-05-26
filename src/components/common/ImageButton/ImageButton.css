@@ -1,0 +1,36 @@
+.Continer-ImageButton{
+    background-color: #FFFEFE;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease background 0.25s;
+    object-fit: contain; 
+    box-sizing: border-box;
+    border-right: #808080 solid 1px;
+    border-bottom: #808080 solid 1px;
+}
+
+.Continer-ImageButton img{
+    width: 140px;
+}
+
+.Continer-ImageButton:hover{
+    background: url('../../../assets/BackgroundIcon/Lego_Background.svg');
+    background-color: #2CAFE5;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 670px){
+    .Continer-ImageButton{
+        border-top: #BBDCF5 solid 0.5px;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .Continer-ImageButton img{
+        height: 80px;
+    }
+}

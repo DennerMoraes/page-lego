@@ -1,0 +1,30 @@
+.Continer-MenuIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    padding: 3px;
+    margin: 2px 0px;
+}
+
+.Continer-MenuIcon:hover{
+    cursor: pointer;
+}
+
+.Continer-MenuIcon::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -300px;
+    width: 0; /* Começa sem largura */
+    height: 100%; /* Altura da linha */
+    background-color: #BBDCF5; /* Cor da linha */
+    transition: width 0.3s ease;
+    z-index: -1; /* Transição suave da largura */
+}
+
+.Continer-MenuIcon:hover::after {
+    width: calc(100% + 300px); /* Aumenta a largura para cobrir o contêiner */
+}

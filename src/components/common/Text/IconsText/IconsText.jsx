@@ -1,9 +1,9 @@
 import './IconsText.css';
 
-const IconsText = ({text, href}) => {
+const IconsText = ({text}) => {
     return (
         <div>
-            <p className='text-IconsText' href={href}>{text}</p>
+            <p className='text-IconsText'>{text}</p>
         </div>
     );
   };

@@ -9,6 +9,7 @@ import SearchLogo from '../../../assets/Icons/Search_Icon.svg';
 import StoreLogo from '../../../assets/Icons/Store_Icon.svg';
 import ContatoLogo from '../../../assets/Icons/Contato_Icon.svg';
 import FullScreenMenu from './FullScreenMenu';
+import ContentContainer from '../../ContentContainer/ContentContainer';
 
 const Navbar = () => {
     const [isMenuVisible, setMenuVisible] = useState(false);
@@ -29,31 +30,35 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className='Container-NavIcon'>
-                <NavIcon icone={LegoLogo}/>
-                <NavIcon
-                    text='Categories'
-                    icone={isHovered ? HamburgerLegoHover : HamburgerLego}
-                    onClick={openMenu}
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                />
-            </div>
-            <div className='Container-NavText'>
-                <NavText text='Gifting' href='#'/>
-                <NavText text='Travel' href='#'/>
-                <NavText text='Adults Welcome' href='#'/>
-                <NavText text='Art & Home Décor ' href='#'/>
-                <NavText text='Pop Culture' href='#'/>
-                <NavText text='Toddlers' href='#'/>
-                <NavText text='Real World Role Playing' href='#'/>
-            </div>
-            <div className='Container-NavIcon'>
-                <NavIcon text='Contact us' icone={ContatoLogo}/>
-                <NavIcon text='Request' icone={StoreLogo}/>
-                <NavIcon text='Search' icone={SearchLogo}/>
-            </div>
-            {isMenuVisible && <FullScreenMenu onClose={closeMenu} isClosing={isClosing} />}
+            <ContentContainer>
+                <div className='Conteiner-Nav'>
+                    <div className='Container-NavIcon'>
+                        <NavIcon icone={LegoLogo} zindex={1} />
+                        <NavIcon
+                            text='Categories'
+                            icone={isHovered ? HamburgerLegoHover : HamburgerLego}
+                            onClick={openMenu}
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        />
+                    </div>
+                    <div className='Container-NavText'>
+                        <NavText text='Gifting' href='#' />
+                        <NavText text='Travel' href='#' />
+                        <NavText text='Adults Welcome' href='#' />
+                        <NavText text='Art & Home Décor ' href='#' />
+                        <NavText text='Pop Culture' href='#' />
+                        <NavText text='Toddlers' href='#' />
+                        <NavText text='Real World Role Playing' href='#' />
+                    </div>
+                    <div className='Container-NavIcon'>
+                        <NavIcon text='Contact us' icone={ContatoLogo} />
+                        <NavIcon text='Request' icone={StoreLogo} />
+                        <NavIcon text='Search' icone={SearchLogo} />
+                    </div>
+                    {isMenuVisible && <FullScreenMenu onClose={closeMenu} isClosing={isClosing} />}
+                </div>
+            </ContentContainer>
         </nav>
     );
 };

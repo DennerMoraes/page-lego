@@ -3,6 +3,7 @@
         transform: translateY(-100%);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -14,6 +15,7 @@
         transform: translateY(0);
         opacity: 1;
     }
+
     100% {
         transform: translateY(-100%);
         opacity: 0;
@@ -26,14 +28,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 500;
     animation: slideDown 0.5s ease-out;
+    margin: 0;
+    padding: 0;
 }
 
 .fullscreen-menu.closing {
@@ -41,12 +45,146 @@
 }
 
 .close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     background: none;
     border: none;
-    color: white;
+    color: black;
     font-size: 24px;
     cursor: pointer;
+}
+
+.Container-FullScreenMenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.Itens-LegoClose {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 300px;
+    padding: 16px 0px 60px 0px
+}
+
+.Itens-MenuIcon {
+    width: 300px;
+}
+
+.Itens-MenuIconThemes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.Left-Side-Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-right: #808080 solid 1px;
+    width: 26%;
+    height: 100%;
+}
+
+.Right-Side-Menu {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 86.9%;
+    max-width: none;
+    right: -13%;
+    gap: 0px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.text-themes {
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+.text-themes::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(-500px);
+    width: calc(500px);
+    height: 1px;
+    background-color: #525252;
+    z-index: 9999;
+}
+
+@media (max-width: 1100px){
+    .Container-FullScreenMenu{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .Left-Side-Menu{
+        width: auto;
+    }
+
+    .Right-Side-Menu{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 670px){
+    .fullscreen-menu {
+        overflow: scroll;
+    }
+
+    .Container-FullScreenMenu{
+        display: block;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .Left-Side-Menu{
+        height: auto;
+        border: none;
+        padding-bottom: 30px;
+    }
+
+    .Right-Side-Menu{
+        position: relative;
+        overflow:unset !important;
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .Itens-LegoClose{
+        position: fixed;
+        height: 80px;
+        width: 100%;
+        z-index: 9999;
+        background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente para permitir a visualização do desfoque */
+        backdrop-filter: blur(10px); /* Ajuste o valor do desfoque conforme necessário */
+        -webkit-backdrop-filter: blur(10px); 
+        padding: 0px;
+    }
+
+    .Itens-MenuIcon{
+        padding-top: 80px;
+    }
 }
