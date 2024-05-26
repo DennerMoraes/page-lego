@@ -9,7 +9,7 @@ import SearchLogo from '../../../assets/Icons/Search_Icon.svg';
 import StoreLogo from '../../../assets/Icons/Store_Icon.svg';
 import ContatoLogo from '../../../assets/Icons/Contato_Icon.svg';
 import FullScreenMenu from './FullScreenMenu';
-import ContentContainer from '../../ContentContainer/ContentContainer';
+import ContentContainer from '../../common/ContentContainer/ContentContainer';
 
 const Navbar = () => {
     const [isMenuVisible, setMenuVisible] = useState(false);
@@ -29,6 +29,7 @@ const Navbar = () => {
     };
 
     return (
+        <>
         <nav>
             <ContentContainer>
                 <div className='Conteiner-Nav'>
@@ -51,15 +52,18 @@ const Navbar = () => {
                         <NavText text='Toddlers' href='#' />
                         <NavText text='Real World Role Playing' href='#' />
                     </div>
-                    <div className='Container-NavIcon'>
-                        <NavIcon text='Contact us' icone={ContatoLogo} />
+                    <div className='Container-NavIcon row-reverse'>
+                        <NavIcon text='Contact us' icone={ContatoLogo} id={'display-none'}/>
                         <NavIcon text='Request' icone={StoreLogo} />
                         <NavIcon text='Search' icone={SearchLogo} />
                     </div>
-                    {isMenuVisible && <FullScreenMenu onClose={closeMenu} isClosing={isClosing} />}
+                    
                 </div>
+
             </ContentContainer>
         </nav>
+        {isMenuVisible && <FullScreenMenu onClose={closeMenu} isClosing={isClosing} />}
+        </>
     );
 };
 

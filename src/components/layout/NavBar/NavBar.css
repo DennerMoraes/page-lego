@@ -1,10 +1,14 @@
 nav {
-    background-color: #D8D8D8;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center !important;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    backdrop-filter: blur(10px);
 }
 
 .Conteiner-Nav {
@@ -34,5 +38,16 @@ nav {
 @media (max-width: 1435px) {
     .Container-NavText{
         display: none;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #display-none{
+        display: none !important;
+    }
+
+    .row-reverse{
+        flex-direction: row-reverse;
     }
 }

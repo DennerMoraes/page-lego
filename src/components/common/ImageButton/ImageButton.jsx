@@ -1,6 +1,6 @@
 import './ImageButton.css';
 
-const ImageButton = ({icone, href}) => {
+const ImageButton = ({icone, href, text}) => {
     return (
         <div className='Continer-ImageButton'>
             <a href={href}>

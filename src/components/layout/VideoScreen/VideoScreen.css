@@ -1,0 +1,155 @@
+.Content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+
+.ControlVideoIcons{
+    position: absolute;
+    right: 7%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.SoundIcon{
+    padding: 22px 22px;
+    border-radius: 50%;
+    border: #ffffff solid 2px;
+    background-color: #F5F5F566;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SoundIcon:hover{
+    border: #006CB7 solid 2px;
+    cursor: pointer;
+}
+
+.SoundIconImage{
+    width: 32px;
+    height: 32px !important;
+}
+
+.SoundIcon:hover .SoundIconImage path{
+    stroke: #006CB7 !important; /* Defina a cor do preenchimento desejada para o hover */
+  }
+
+.DownloadIcon{
+    padding: 10px 10px;
+    border-radius: 50%;
+    border: #ffffff solid 2px;
+    background-color: #F5F5F566;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DownloadIcon:hover{
+    border: #006CB7 solid 2px;
+    cursor: pointer;
+}
+
+.DownloadIcon:hover .DonwloadIconImage path{
+    stroke: #006CB7 !important;
+    fill: #006CB7;
+}
+
+.ScrollIcon{
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ScrollIcon p {
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Title-h1{
+    position: absolute;
+    bottom: 10%;
+}
+
+.Title-h1 h1{
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Title-h1-mobile h1{
+    color: black;
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 400;
+    display: none;
+}
+
+.Container-TitleMobile{
+    background-color: #ffffff;
+}
+
+.Container-VideoScreen{
+    background-color: #B1B1B1;
+    height: 100vh;
+}
+
+@media (max-width: 800px){
+    .Title-h1{
+        bottom: 15%;
+    }
+}
+
+@media (max-width: 600px){
+    .Container-VideoScreen{
+        height: 60vh;
+        position: relative;
+    }
+
+    .Title-h1{
+        display: none;
+    }
+
+    .SoundIconImage{
+        width: 24px;
+        height: 24px !important;
+    }
+
+    .SoundIcon{
+        padding: 18px;
+    }
+
+    .DonwloadIconImage{
+        width: 28px;
+        height: 28px;
+    }
+
+    .DonwloadIcon{
+        padding: 8px 8px !important;
+    }
+
+    .ScrollIcon{
+        display: none;
+    }
+
+    .Title-h1-mobile h1{
+        display: flex;
+    }
+}

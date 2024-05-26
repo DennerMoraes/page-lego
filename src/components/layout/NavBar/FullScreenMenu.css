@@ -143,7 +143,7 @@
         flex-direction: column;
         width: 100%;
         right: 0;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 }
 
@@ -166,22 +166,24 @@
     }
 
     .Right-Side-Menu{
-        position: relative;
+        position: absolute;
+        left: -30px;
         overflow:unset !important;
-        width: 100%;
+        width: calc(100% + 60px);
         height: auto;
         padding-bottom: 30px;
     }
 
     .Itens-LegoClose{
         position: fixed;
+        left: 0;
         height: 80px;
         width: 100%;
         z-index: 9999;
-        background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente para permitir a visualização do desfoque */
-        backdrop-filter: blur(10px); /* Ajuste o valor do desfoque conforme necessário */
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); 
-        padding: 0px;
+        padding: 0px 0px 0px 30px;
     }
 
     .Itens-MenuIcon{

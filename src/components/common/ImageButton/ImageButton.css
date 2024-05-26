@@ -23,14 +23,19 @@
     background-size: cover;
 }
 
-@media (max-width: 670px){
+@media (max-width: 1100px){
     .Continer-ImageButton{
         border-top: #BBDCF5 solid 0.5px;
         border-right: none;
         border-bottom: none;
+        height: 80px;
+    }
+
+    .Continer-ImageButton:last-child{
+        border-bottom: #BBDCF5 solid 0.5px;
     }
 
     .Continer-ImageButton img{
-        height: 80px;
+        width: 80px;
     }
 }
