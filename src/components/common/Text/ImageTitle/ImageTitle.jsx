@@ -1,8 +1,8 @@
 import './ImageTitle.css';
 
-const ImageTitle = ({text, alinhamento}) => {
+const ImageTitle = ({ text, alinhamento }) => {
     return (
-        <h2 className='Title-ImageTitle' style={{textAlign:alinhamento}}>{text}</h2>
+        <h2 className='Title-ImageTitle' style={{ textAlign: alinhamento }}>{text}</h2>
     );
 };
 

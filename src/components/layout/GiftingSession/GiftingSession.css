@@ -1,10 +1,10 @@
-.Container-GiftingSession{
+.Container-GiftingSession {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
 }
 
-.Container-Image{
+.Container-Image {
     width: 49%;
     text-align: left;
     display: flex;
@@ -14,7 +14,7 @@
     overflow: hidden;
 }
 
-.Container-Image-Right{
+.Container-Image-Right {
     width: 49%;
     text-align: left;
     display: flex;
@@ -24,26 +24,26 @@
     overflow: hidden;
 }
 
-.Container-Image img{
+.Container-Image img {
     width: 100%;
     max-height: 506px;
     object-fit: cover;
-    object-position: center; 
+    object-position: center;
 }
 
-.Container-Image-Right img{
+.Container-Image-Right img {
     width: 100%;
     max-height: 506px;
     object-fit: cover;
-    object-position: center; 
+    object-position: center;
 }
 
-.Container-ImageTexts{
+.Container-ImageTexts {
     padding: 30px 0px 0px 0px;
     width: 32%;
 }
 
-.Container-ImageTexts-Right{
+.Container-ImageTexts-Right {
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
     width: 32%;
 }
 
-.Container-Text-Img{
+.Container-Text-Img {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -63,7 +63,7 @@
     padding: 0px 0px 100px 10%;
 }
 
-.Container-Text-Img-Right{
+.Container-Text-Img-Right {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -74,78 +74,80 @@
     padding: 0px 10% 0px 0px;
 }
 
-.Border-Buttom-Orange{
+.Border-Buttom-Orange {
     border-bottom: #EE7500 solid 1px;
 }
 
-.Border-Buttom-Green{
+.Border-Buttom-Green {
     border-bottom: #00963E solid 1px;
 }
 
-.Border-Buttom-Blue{
+.Border-Buttom-Blue {
     border-bottom: #006CB7 solid 1px;
     padding: 0px 0px 0px 10%;
 }
 
-.Border-Buttom-Gray{
+.Border-Buttom-Gray {
     border-bottom: #E0E0E0 solid 1px;
-    padding: 0px 10% 0px 0px ;
+    padding: 0px 10% 0px 0px;
 }
 
-.Border-Buttom-Black{
+.Border-Buttom-Black {
     border-bottom: #000000 solid 1px;
     padding: 0px 0px 0px 10%;
 }
 
-.Border-Buttom-Pink{
+.Border-Buttom-Pink {
     border-bottom: #FC36A5 solid 1px;
-    padding: 0px 10% 0px 0px ;
+    padding: 0px 10% 0px 0px;
 }
 
-.Border-Buttom-Yellow{
+.Border-Buttom-Yellow {
     border-bottom: #FFD500 solid 1px;
 }
 
-@media (max-width: 1660px){
-    .Container-ImageTexts, .Container-ImageTexts-Right{
+@media (max-width: 1660px) {
+
+    .Container-ImageTexts,
+    .Container-ImageTexts-Right {
         width: 45%;
     }
 }
 
-@media (max-width: 1300px){
-    .Container-Text-Img{
-       flex-direction: column-reverse;
-       height: 100%;
-       padding: 0;
+@media (max-width: 1300px) {
+    .Container-Text-Img {
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 0;
     }
 
-    .Container-Text-Img-Right{
+    .Container-Text-Img-Right {
         flex-direction: column;
         height: 100%;
         padding: 0;
     }
 
-    .Container-Image{
+    .Container-Image {
         position: relative;
         display: flex;
         width: 100%;
         height: 370px;
     }
 
-    .Container-Image-Right{
+    .Container-Image-Right {
         position: relative;
         display: flex;
         width: 100%;
         height: 370px;
     }
 
-    .Container-ImageTexts{
+    .Container-ImageTexts {
         width: 100%;
         padding: 0px 30px 90px 30px;
         box-sizing: border-box;
     }
 
-    .Container-ImageTexts-Right{
+    .Container-ImageTexts-Right {
         width: 100%;
         padding: 0px 30px 90px 30px;
         box-sizing: border-box;
@@ -153,14 +155,13 @@
     }
 }
 
-@media (max-width: 600px){
-    .Container-Image{
+@media (max-width: 600px) {
+    .Container-Image {
         height: 170px;
     }
-    
-    .Container-Image-Right{
+
+    .Container-Image-Right {
         height: 170px;
     }
 
 }
-

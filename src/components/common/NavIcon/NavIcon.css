@@ -1,15 +1,15 @@
-.Continer-NavIcon{
+.Continer-NavIcon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.Continer-NavIcon:hover{
+.Continer-NavIcon:hover {
     cursor: pointer;
     color: #2CAFE5;
 }
 
-.Continer-NavIcon:hover .text-IconsText{
+.Continer-NavIcon:hover .text-IconsText {
     color: #2CAFE5;
 }

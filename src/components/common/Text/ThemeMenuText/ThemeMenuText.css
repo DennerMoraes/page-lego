@@ -1,4 +1,4 @@
-.text-ThemeMenuText{
+.text-ThemeMenuText {
     font-size: 20px;
     line-height: 38px;
     font-weight: 400;
@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-.text-ThemeMenuText:hover{
+.text-ThemeMenuText:hover {
     cursor: pointer;
 }
 
@@ -18,13 +18,13 @@
     position: absolute;
     bottom: 0;
     left: -300px;
-    width: 0; /* Começa sem largura */
-    height: 100%; /* Altura da linha */
-    background-color: #BBDCF5; /* Cor da linha */
+    width: 0;
+    height: 100%;
+    background-color: #BBDCF5;
     transition: width 0.3s ease;
-    z-index: -1; /* Transição suave da largura */
+    z-index: -1;
 }
 
 .text-ThemeMenuText:hover::after {
-    width: calc(100% + 300px); /* Aumenta a largura para cobrir o contêiner */
+    width: calc(100% + 300px);
 }

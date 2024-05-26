@@ -1,6 +1,6 @@
 import './SessionTitle.css';
 
-const SessionTitle = ({text, color}) => {
+const SessionTitle = ({ text, color }) => {
     return (
         <div className='Title-Session' style={{ '--border-color': color }}>
             <h2 className='h2-session' >{text}</h2>

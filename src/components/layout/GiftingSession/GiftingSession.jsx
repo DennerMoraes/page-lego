@@ -28,13 +28,13 @@ const GiftingSession = () => {
                     <DetailsButton text={'View details'} />
                 </div>
                 <div className="Container-Image">
-                    <img src={Image1} alt="lego"/>
+                    <img src={Image1} alt="lego" />
                 </div>
             </div>
 
             <div className="Container-Text-Img-Right Border-Buttom-Orange">
                 <div className="Container-Image-Right">
-                    <img src={Image2} alt="lego"/>
+                    <img src={Image2} alt="lego" />
                 </div>
                 <div className="Container-ImageTexts-Right">
                     <ImageTitle text={'Gifts for Mom'} alinhamento="end" />
@@ -51,12 +51,12 @@ const GiftingSession = () => {
                     <DetailsButton text={'View details'} />
                 </div>
                 <div className="Container-Image">
-                    <img src={Image3} alt="lego"/>
+                    <img src={Image3} alt="lego" />
                 </div>
             </div>
             <div className="Container-Text-Img-Right Border-Buttom-Green">
                 <div className="Container-Image-Right">
-                    <img src={Image4} alt="lego"/>
+                    <img src={Image4} alt="lego" />
                 </div>
                 <div className="Container-ImageTexts-Right">
                     <ImageTitle text={'Fun accessories to take with you on your travels or keep kids entertained'} alinhamento="end" />
@@ -73,14 +73,14 @@ const GiftingSession = () => {
                     <DetailsButton text={'View details'} />
                 </div>
                 <div className="Container-Image">
-                    <img src={Image5} alt="lego"/>
+                    <img src={Image5} alt="lego" />
                 </div>
             </div>
 
             <SessionTitle text={'Art & Home Décor '} color={'#E0E0E0'} />
             <div className="Container-Text-Img-Right Border-Buttom-Gray">
                 <div className="Container-Image-Right">
-                    <img src={Image6} alt="lego"/>
+                    <img src={Image6} alt="lego" />
                 </div>
                 <div className="Container-ImageTexts-Right">
                     <ImageTitle text={'Playful ideas for refreshing your space while tapping into your more creative side'} alinhamento="end" />
@@ -97,14 +97,14 @@ const GiftingSession = () => {
                     <DetailsButton text={'View details'} />
                 </div>
                 <div className="Container-Image">
-                    <img src={Image7} alt="lego"/>
+                    <img src={Image7} alt="lego" />
                 </div>
             </div>
 
             <SessionTitle text={'Pop Culture'} color={'#FC36A5'} />
             <div className="Container-Text-Img-Right Border-Buttom-Pink">
                 <div className="Container-Image-Right">
-                    <img src={Image8} alt="lego"/>
+                    <img src={Image8} alt="lego" />
                 </div>
                 <div className="Container-ImageTexts-Right">
                     <ImageTitle text={'Recreate scenes from your favorite movies and TV series'} alinhamento="end" />
@@ -121,13 +121,13 @@ const GiftingSession = () => {
                     <DetailsButton text={'View details'} />
                 </div>
                 <div className="Container-Image">
-                    <img src={Image9} alt="lego"/>
+                    <img src={Image9} alt="lego" />
                 </div>
             </div>
 
             <div className="Container-Text-Img-Right Border-Buttom-Yellow">
                 <div className="Container-Image-Right">
-                    <img src={Image10} alt="lego"/>
+                    <img src={Image10} alt="lego" />
                 </div>
                 <div className="Container-ImageTexts-Right">
                     <ImageTitle text={'xx TBD'} alinhamento="end" />
@@ -144,13 +144,13 @@ const GiftingSession = () => {
                     <DetailsButton text={'View details'} />
                 </div>
                 <div className="Container-Image">
-                    <img src={Image11} alt="lego"/>
+                    <img src={Image11} alt="lego" />
                 </div>
             </div>
 
             <div className="Container-Text-Img-Right">
                 <div className="Container-Image-Right">
-                    <img src={Image12} alt="lego"/>
+                    <img src={Image12} alt="lego" />
                 </div>
                 <div className="Container-ImageTexts-Right">
                     <ImageTitle text={'xxxxx TBD'} alinhamento="end" />

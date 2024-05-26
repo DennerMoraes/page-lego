@@ -36,18 +36,18 @@ nav {
 }
 
 @media (max-width: 1435px) {
-    .Container-NavText{
+    .Container-NavText {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 600px) {
-    #display-none{
+    #display-none {
         display: none !important;
     }
 
-    .row-reverse{
+    .row-reverse {
         flex-direction: row-reverse;
     }
 }

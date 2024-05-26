@@ -1,4 +1,4 @@
-.Content{
+.Content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -6,7 +6,7 @@
     justify-content: center !important;
 }
 
-.ControlVideoIcons{
+.ControlVideoIcons {
     position: absolute;
     right: 7%;
     bottom: 10%;
@@ -16,7 +16,7 @@
     gap: 20px;
 }
 
-.SoundIcon{
+.SoundIcon {
     padding: 22px 22px;
     border-radius: 50%;
     border: #ffffff solid 2px;
@@ -27,21 +27,22 @@
     align-items: center;
 }
 
-.SoundIcon:hover{
+.SoundIcon:hover {
     border: #006CB7 solid 2px;
     cursor: pointer;
 }
 
-.SoundIconImage{
+.SoundIconImage {
     width: 32px;
     height: 32px !important;
 }
 
-.SoundIcon:hover .SoundIconImage path{
-    stroke: #006CB7 !important; /* Defina a cor do preenchimento desejada para o hover */
-  }
+.SoundIcon:hover .SoundIconImage path {
+    stroke: #006CB7 !important;
+    /* Defina a cor do preenchimento desejada para o hover */
+}
 
-.DownloadIcon{
+.DownloadIcon {
     padding: 10px 10px;
     border-radius: 50%;
     border: #ffffff solid 2px;
@@ -52,17 +53,17 @@
     align-items: center;
 }
 
-.DownloadIcon:hover{
+.DownloadIcon:hover {
     border: #006CB7 solid 2px;
     cursor: pointer;
 }
 
-.DownloadIcon:hover .DonwloadIconImage path{
+.DownloadIcon:hover .DonwloadIconImage path {
     stroke: #006CB7 !important;
     fill: #006CB7;
 }
 
-.ScrollIcon{
+.ScrollIcon {
     position: absolute;
     right: 2%;
     bottom: 2%;
@@ -81,12 +82,12 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.Title-h1{
+.Title-h1 {
     position: absolute;
     bottom: 10%;
 }
 
-.Title-h1 h1{
+.Title-h1 h1 {
     font-size: 80px;
     line-height: 100px;
     font-weight: 400;
@@ -94,7 +95,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.Title-h1-mobile h1{
+.Title-h1-mobile h1 {
     color: black;
     font-size: 38px;
     line-height: 50px;
@@ -102,54 +103,54 @@
     display: none;
 }
 
-.Container-TitleMobile{
+.Container-TitleMobile {
     background-color: #ffffff;
 }
 
-.Container-VideoScreen{
+.Container-VideoScreen {
     background-color: #B1B1B1;
     height: 100vh;
 }
 
-@media (max-width: 800px){
-    .Title-h1{
+@media (max-width: 800px) {
+    .Title-h1 {
         bottom: 15%;
     }
 }
 
-@media (max-width: 600px){
-    .Container-VideoScreen{
+@media (max-width: 600px) {
+    .Container-VideoScreen {
         height: 60vh;
         position: relative;
     }
 
-    .Title-h1{
+    .Title-h1 {
         display: none;
     }
 
-    .SoundIconImage{
+    .SoundIconImage {
         width: 24px;
         height: 24px !important;
     }
 
-    .SoundIcon{
+    .SoundIcon {
         padding: 18px;
     }
 
-    .DonwloadIconImage{
+    .DonwloadIconImage {
         width: 28px;
         height: 28px;
     }
 
-    .DonwloadIcon{
+    .DonwloadIcon {
         padding: 8px 8px !important;
     }
 
-    .ScrollIcon{
+    .ScrollIcon {
         display: none;
     }
 
-    .Title-h1-mobile h1{
+    .Title-h1-mobile h1 {
         display: flex;
     }
 }

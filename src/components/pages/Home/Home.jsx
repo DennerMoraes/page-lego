@@ -9,12 +9,12 @@ const HomePage = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <VideoScreen/>
-            <MobileTitle/>
-            <GiftingSession/>
-            <Footer/>
+            <VideoScreen />
+            <MobileTitle />
+            <GiftingSession />
+            <Footer />
         </div>
     );
-  };
-  
+};
+
 export default HomePage;

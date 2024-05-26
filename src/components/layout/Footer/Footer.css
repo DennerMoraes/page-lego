@@ -19,12 +19,12 @@
     width: 570px;
 }
 
-@media (max-width: 600px){
-    .Footer{
+@media (max-width: 600px) {
+    .Footer {
         height: auto;
     }
 
-    .text-Footer{
+    .text-Footer {
         width: auto;
         margin: 0;
         padding: 30px;

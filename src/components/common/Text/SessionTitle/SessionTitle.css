@@ -36,9 +36,7 @@
     right: 0;
     bottom: 0;
     height: 1px;
-    /* Espessura da borda */
     background-color: var(--border-color, #000000);
-    /* Cor da borda */
 }
 
 @media (max-width: 1200px) {

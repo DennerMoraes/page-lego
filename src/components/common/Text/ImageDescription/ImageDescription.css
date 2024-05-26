@@ -1,4 +1,4 @@
-.Title-ImageDescription{
+.Title-ImageDescription {
     font-size: 20px;
     font-weight: 300;
     line-height: 38px;
@@ -7,8 +7,8 @@
     letter-spacing: 1.5px;
 }
 
-@media (max-width: 1300px){
-    .Title-ImageDescription{
+@media (max-width: 1300px) {
+    .Title-ImageDescription {
         font-size: 18px;
         line-height: 33px;
         text-align: start !important;

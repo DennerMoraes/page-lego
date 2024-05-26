@@ -9,7 +9,7 @@
     margin: 2px 0px;
 }
 
-.Continer-MenuIcon:hover{
+.Continer-MenuIcon:hover {
     cursor: pointer;
 }
 
@@ -18,13 +18,13 @@
     position: absolute;
     bottom: 0;
     left: -300px;
-    width: 0; /* Começa sem largura */
-    height: 100%; /* Altura da linha */
-    background-color: #BBDCF5; /* Cor da linha */
+    width: 0;
+    height: 100%;
+    background-color: #BBDCF5;
     transition: width 0.3s ease;
-    z-index: -1; /* Transição suave da largura */
+    z-index: -1;
 }
 
 .Continer-MenuIcon:hover::after {
-    width: calc(100% + 300px); /* Aumenta a largura para cobrir o contêiner */
+    width: calc(100% + 300px);
 }
