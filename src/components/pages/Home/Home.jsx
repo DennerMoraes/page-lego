@@ -2,7 +2,7 @@ import Navbar from "../../layout/NavBar/NavBar";
 import VideoScreen from "../../layout/VideoScreen/VideoScreen";
 import MobileTitle from "../../layout/VideoScreen/MobileTitle";
 import "./Home.css";
-import GiftingSession from "../../layout/GiftingSession/GiftingSession";
+import AllSession from "../../layout/AllSession/AllSession";
 import Footer from "../../layout/Footer/Footer";
 
 const HomePage = () => {
@@ -11,7 +11,7 @@ const HomePage = () => {
             <Navbar></Navbar>
             <VideoScreen />
             <MobileTitle />
-            <GiftingSession />
+            <AllSession />
             <Footer />
         </div>
     );
